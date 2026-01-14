@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args); // create a website builder
 builder.WebHost.UseUrls("http://0.0.0.0:5000");
 
 var app = builder.Build();
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
