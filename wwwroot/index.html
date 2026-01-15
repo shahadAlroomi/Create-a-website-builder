@@ -6,12 +6,15 @@
         <title>Min Hemsida!</title>
     </head>
     <body>
+        <p id="time"></p>
+        <p id="date"></p>
+
         <h1>Min Hemsida</h1>
         <p> Här kan du hitta info</p>
         <img src="https://media.istockphoto.com/id/1323655436/sv/foto/abstract-art-collage-of-young-woman-with-flowers.jpg?s=612x612&w=is&k=20&c=mnWMCc-29vUmyp1yueTVXTISuz7NbsieyzXj8m2Wabs=">
         <img src="image.jpg">
 
-        <p id="time"></p>
+       
 
 
 
@@ -23,6 +26,15 @@
         .then(data => {
             document.getElementById('time').textContent = "Klockan är " + data;
         })
+        fetch
+
+         fetch('/date')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('date').textContent = "Idag är " + data;
+        })
+        fetch
+
 
     
     </script>

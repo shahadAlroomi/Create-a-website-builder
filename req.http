@@ -1,0 +1,11 @@
+GET https://suvnet.se/api/customers HTTP/1.1
+###
+
+
+POST https://suvnet.se/api/customers HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Amir Azadi Nowak",
+    "email": "amir.nowak@example.se"
+}
